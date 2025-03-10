@@ -14,6 +14,7 @@ An extremely simple Python script to remove EXIF metadata from image files. I sa
 ### Requirements:
 - Python 3.x
 - [Pillow](https://python-pillow.org/)
+- [Colorama](https://pypi.org/project/colorama/)
 
 #
 
@@ -24,20 +25,21 @@ An extremely simple Python script to remove EXIF metadata from image files. I sa
    cd iCleaner
    ```
 **Step 2:** Install required dependencies (if needed):
-   ```python
-   pip install Pillow
+   ```python3
+   pip3 install Pillow
+   pip3 install colorama
    ```
 
 #
 
 ### Usage:
-#### **For a single image file:**
-   ```python
-   python iCleaner.py path/to/image.jpg
+#### **Example for a single image file:**
+   ```python3
+   python3 iCleaner.py <image_file>
    ```
-If no output folder is provided, the script creates one named <image_name>_cleaned in the same directory as the image.
-#### **For a folder of images:**
-   ```python
-   python iCleaner.py path/to/input_folder path/to/output_folder
+If no output folder is provided, the script creates one named '<image_name>_cleaned' in the same directory as the image.
+#### **Example for a folder of images:**
+   ```python3
+   python3 iCleaner.py <input_folder> <output_folder>
    ```
 The script will process all .JPG, .JPEG, and .PNG files in the input folder and save the cleaned images to the specified output folder.
